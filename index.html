@@ -4,234 +4,461 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NAILS by Maroua</title>
+
         <style>
 
-           header{
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              background-color:#3b292d;
-              color:#f8e9ea;
-              padding: 15px;
-              text-align: center;
-              font-size: 19px;
-              z-index: 10;
-              box-sizing: border-box;
-            }
-            .after-header{
-                text-align: center;
-                margin-top: 130px;
-                padding: 20px;
-            }
-            .debut-des-carts{
-                max-width: 1100px;
-                margin: 60px auto;
-                padding: 20px;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 30px;
-            }
-            .card{
-                width: 320px;
-                background-color:#fff8f6;
-                border: 1px solid #ecdde0;
-                border-radius: 15px;
-                padding: 30px;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
-            }
+            /* CSS présent directement dans le HTML.
+               ✅ Accepté : l'énoncé autorise une balise <style> dans le HTML. */
 
-            .button{
-             display: inline-block;
-             padding: 14px 25px;
-              background-color: #c77988;
-              color: white;
-              text-decoration: none;
-               border-radius: 25px;
-               font-weight: bold;
-               transition: 0.3s;
-               align-self: center;
-               margin-top: 15px;
-            }
-            .button:hover{
-                background-color: #d36b91;
-            }
-            .D{
-             text-align: center;
-              color:#c77988;
-                font-family:Arial, sans-serif ;
-               font-size:13px;
-                letter-spacing: 3px;
-               font-weight: bold;
-            }
-            .E{
-                text-align: center;
-                font-family: Georgia, serif;
-                font-size: 50px;
-                color: #3b292d;
-               line-height: 1.1;
-                margin-bottom: 25px;
-            }
-            .E span{
-                color: #c77988;
-            }
-            .M {
-                text-align: center;
-            }
-            .card-image {
-              height: 200px;
-              background-color: beige;
-              border-radius: 20px;   
-              overflow: hidden;      
-            }
-           .card-image img {
-             width: 100%;
-             height: 100%;
-             object-fit: cover;    
-             display: block;
-            }
-           
-            .card-content{
-                flex: 1;
-                padding: 20px 0;
-            }
-            .card-footer{
-                margin-top: 25px;
-                padding-top: 15px;
-                border-top:1px solid #eee;
-            }
-            
-            .card-footer span{
-                font-size: 10px;
-                color:#888;
-            }
-            .card-footer strong{
-                color:#d36b91;
-                margin-left: 10px;
-            }
-            .A{
-             color: #c77988;
-             font-family: "Georgia", serif;
-             font-size: 13px;
-              letter-spacing: 3px;
-            }
-            .B{
-                font-family: Georgia, serif;
-                font-size: 65px;
-                color: #3b292d;
-               line-height: 1.1;
-                margin-bottom: 25px;
-            }
-           .B span{
-              color: #c77988;
-            }
-            .C {
-                color: #806b70;
-                font-family: Arial, sans-serif;
-                font-size: 17px;
-                line-height: 1.7;   
-            } 
-            footer {
-             position: relative;
-             text-align: center;
-             padding: 100px 20px;
-              background-color: #fff8f6;
-              overflow: hidden;
-            }
-            footer .A1, footer .A2{
-                color: #806b70;
-                font-size: 13px;
-            }
+    header{
+    position: fixed;
 
-            
+    /* ✅ Très bien : position: fixed est utilisée comme demandé. */
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#3b292d;
+    color:#f8e9ea;
+    padding: 15px;
+    text-align: center;
+    font-size: 19px;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* ✅ Header fixé en haut de la page. */
+
+
+.after-header{
+    text-align: center;
+    margin-top: 130px;
+    padding: 20px;
+}
+
+/* ✅ Bonne utilisation de margin pour laisser l'espace sous le header. */
+
+
+.debut-des-carts{
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+
+    display: flex;
+
+    /* ✨ Bonne amélioration :
+       flex permet d'organiser les cartes facilement. */
+
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    /* ✨ gap est également une bonne amélioration pour
+       créer un espace entre les cartes. */
+}
+
+
+.card{
+    width: 320px;
+    background-color:#fff8f6;
+    border: 1px solid #ecdde0;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    /* ✨ Bonne utilisation de flex pour organiser le contenu de la carte. */
+}
+
+
+.button{
+    display: inline-block;
+    padding: 14px 25px;
+    background-color: #c77988;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    /* ✨ Très bien : transition améliore l'effet au survol. */
+
+    align-self: center;
+    margin-top: 15px;
+}
+
+
+.button:hover{
+
+    /* ✨ Très bon bonus :
+       :hover permet de modifier le bouton lorsque la souris passe dessus. */
+
+    background-color: #d36b91;
+}
+
+
+.D{
+    text-align: center;
+    color:#c77988;
+    font-family:Arial, sans-serif;
+    font-size:13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+.E{
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color: #3b292d;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+
+.E span{
+    color: #c77988;
+}
+
+
+.M {
+    text-align: center;
+}
+
+
+.card-image {
+    height: 200px;
+    background-color: beige;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* ✅ Bonne organisation de la partie image. */
+
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.card-content{
+    flex: 1;
+    padding: 20px 0;
+}
+
+
+.card-footer{
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top:1px solid #eee;
+}
+
+
+.card-footer span{
+    font-size: 10px;
+    color:#888;
+}
+
+
+.card-footer strong{
+    color:#d36b91;
+    margin-left: 10px;
+}
+
+
+.A{
+    color: #c77988;
+    font-family: "Georgia", serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+
+.B{
+    font-family: Georgia, serif;
+    font-size: 65px;
+    color: #3b292d;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+
+.B span{
+    color: #c77988;
+}
+
+
+.C {
+    color: #806b70;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+footer {
+    position: relative;
+
+    /* ✅ Très bien : position: relative est utilisée. */
+
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #fff8f6;
+    overflow: hidden;
+}
+
+
+footer .A1,
+footer .A2{
+    color: #806b70;
+    font-size: 13px;
+}
+
+
         </style>
 
     </head>
+
     <body>
+
         <header>
+
             <p>NAILS by Maroua</p>
+
+            <!-- ✅ Header présent et fixé en haut. -->
+
         </header>
+
         <div class="after-header">
+
             <p class="A">WELCOME TO NAILS by Maroua</p>
-            <h1 class="B">Your nails,&nbsp;<span>your style.</span></h1>
-            <p class="C">Chaque manucure est pensée comme une petite œuvre : gestes précis, produits de qualité, et un résultat qui tient dans le temps. Réserve ton moment beauté dès aujourd'hui.</p>
+
+            <h1 class="B">
+                Your nails,&nbsp;<span>your style.</span>
+            </h1>
+
+            <p class="C">
+                Chaque manucure est pensée comme une petite œuvre : gestes précis,
+                produits de qualité, et un résultat qui tient dans le temps.
+                Réserve ton moment beauté dès aujourd'hui.
+            </p>
+
             <a href="#services" class="button">Découvrir nos styles</a>
+
+            <!-- ✅ Très bien : le lien permet d'accéder directement aux cartes. -->
+
         </div>
+
         <hr>
+
         <br>
-        <div class="M">  
-           <p class="D">NOS SERVICES</p>
-           <h3 class="E">Find your perfect <span>style.</span></h3>
+
+        <div class="M">
+
+            <p class="D">NOS SERVICES</p>
+
+            <h3 class="E">
+                Find your perfect <span>style.</span>
+            </h3>
+
+            <!-- ✅ Bonne présentation du titre de la section. -->
+
         </div>
-        <!--BEFORE THE CARDS-->
+
+        <!-- BEFORE THE CARDS -->
+
         <section class="debut-des-carts" id="services">
 
-            <!--first card-->
+            <!--
+            ✅ Les trois cartes sont présentes.
+            ✅ Chaque carte contient une image, un titre, une description,
+               une date, un prix et un bouton.
+            -->
+
+            <!-- first card -->
+
             <div class="card" id="C1">
+
                 <div class="card-image">
-                    <img src="/images/23 Elegant Milky White Nails to Upgrade Your Look.jpg" alt="image-classic-nails">
+
+                    <img
+                        src="/images/23 Elegant Milky White Nails to Upgrade Your Look.jpg"
+                        alt="image-classic-nails">
+
+                    <!-- ⚠️ Attention au "/" au début du chemin de l'image.
+                         Selon l'organisation du projet, cela peut empêcher
+                         l'image de s'afficher sur GitHub Pages. -->
+
                 </div>
+
                 <div class="card-content">
-                   <p>01-CLASSIC</p>
+
+                    <p>01-CLASSIC</p>
+
                     <h3>Classic Nails</h3>
-                    <p>La base intemporelle : des ongles nets et soignés, pour un rendu discret qui accompagne toutes tes tenues.</p>
-                   <hr>
+
+                    <p>
+                        La base intemporelle : des ongles nets et soignés,
+                        pour un rendu discret qui accompagne toutes tes tenues.
+                    </p>
+
+                    <hr>
+
                 </div>
+
                 <div class="card-footer">
+
                     <span>17 aout 2026</span>
+
                     <strong>1000DA</strong>
+
                 </div>
+
                 <a href="#" class="button">Voir les détails</a>
+
+                <!-- ✅ Bouton présent. -->
+
             </div>
 
-            <!--second card-->
+
+            <!-- second card -->
+
             <div class="card" id="C2">
+
                 <div class="card-image">
-                    <img src="/images/15+ Old Money Nails_ Classy & Elegant Nail Inspo for Minimalistic Perfection 💅✨.jpg" alt="image-french-nails">
+
+                    <img
+                        src="/images/15+ Old Money Nails_ Classy & Elegant Nail Inspo for Minimalistic Perfection 💅✨.jpg"
+                        alt="image-french-nails">
+
                 </div>
+
                 <div class="card-content">
-                   <p>02-FRENCH</p>
+
+                    <p>02-FRENCH</p>
+
                     <h3>French Nails</h3>
-                    <p>Le grand classique revisité : un liseré blanc net posé avec précision, pour une élégance discrète en toute occasion.</p>
-                   <hr>
+
+                    <p>
+                        Le grand classique revisité : un liseré blanc net posé
+                        avec précision, pour une élégance discrète en toute occasion.
+                    </p>
+
+                    <hr>
+
                 </div>
+
                 <div class="card-footer">
+
                     <span>17 aout 2026</span>
+
                     <strong>1500DA</strong>
+
                 </div>
+
                 <a href="#" class="button">Voir les détails</a>
+
             </div>
 
-            <!--last card-->
+
+            <!-- last card -->
+
             <div class="card" id="C3">
+
                 <div class="card-image">
-                    <img src="/images/ELEGANT FLORAL LUXE NAIL ART.jpg" alt="image-art-nails">
+
+                    <img
+                        src="/images/ELEGANT FLORAL LUXE NAIL ART.jpg"
+                        alt="image-art-nails">
+
                 </div>
+
                 <div class="card-content">
-                   <p>03-CREATIVE</p>
+
+                    <p>03-CREATIVE</p>
+
                     <h3>Nail Art</h3>
-                    <p>Motifs, dégradés, strass ou touches graphiques : un design sur-mesure pensé selon tes envies du moment.</p>
-                   <hr>
+
+                    <p>
+                        Motifs, dégradés, strass ou touches graphiques :
+                        un design sur-mesure pensé selon tes envies du moment.
+                    </p>
+
+                    <hr>
+
                 </div>
+
                 <div class="card-footer">
+
                     <span>17 aout 2026</span>
+
                     <strong>2000DA</strong>
+
                 </div>
+
                 <a href="#" class="button">Voir les détails</a>
+
             </div>
 
         </section>
 
 
         <footer>
-          <h4 class="Q">NAILS by Maroua</h4>
-          <p class="A1">Tes ongles, ta signature.</p>
-          <p class="A2">2026 NAILS by Maroua - Made with love.</p>
+
+            <h4 class="Q">NAILS by Maroua</h4>
+
+            <p class="A1">Tes ongles, ta signature.</p>
+
+            <p class="A2">2026 NAILS by Maroua - Made with love.</p>
+
+            <!-- ✅ Footer présent. -->
+
         </footer>
-           
+
+
     </body>
 
 </html>
+
+<!--
+ Félicitations !
+
+Excellent travail !
+
+ Tu as réussi :
+✔ Header fixé avec position: fixed.
+✔ Section d'accueil.
+✔ Lien vers les services.
+✔ Trois cartes.
+✔ Images avec attribut alt.
+✔ Titres et descriptions.
+✔ Dates et prix.
+✔ Boutons "Voir les détails".
+✔ Footer.
+✔ Très bonne présentation générale.
+
+ Tu as également ajouté des éléments supplémentaires comme :
+✔ transition
+✔ :hover
+✔ flex
+✔ gap
+
+Ces ajouts sont acceptés car ils restent cohérents avec le niveau
+du devoir et améliorent la présentation.
+
+ Petite remarque :
+- Attention aux chemins des images qui commencent par "/" lors de la mise
+  en ligne sur GitHub Pages.
+- Tu peux écrire "17 août 2026" avec l'accent sur août.
+
+ Très beau travail et belle créativité !
+
+ Continue comme ça et garde cette qualité dans les prochains devoirs.
+-->
